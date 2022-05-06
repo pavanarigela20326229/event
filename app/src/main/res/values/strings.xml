@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Events</string>
+    <string name="type">Type</string>
+    <string name="please_check_internet_connection">Please check internet connection.</string>
+    <string name="no_events_found">No Events Found</string>
+    <string name="press_back_again_to_leave_the_app">Press back again to leave the app.</string>
+
+
+</resources>

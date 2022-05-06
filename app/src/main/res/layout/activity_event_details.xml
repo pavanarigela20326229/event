@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <com.example.eventsdemo.customclass.CustomToolbar
+            android:id="@+id/eventDetailsToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            toolbar:layout_constraintTop_toTopOf="parent"
+            toolbar:showBackbutton="true"
+            toolbar:showTitle="true"
+            toolbar:title="Event" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            toolbar:layout_constraintBottom_toBottomOf="parent"
+            toolbar:layout_constraintTop_toBottomOf="@+id/eventDetailsToolbar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvEventType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    toolbar:layout_constraintTop_toTopOf="parent"
+                    tools:text="Event type: Event" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivEvent"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    toolbar:layout_constraintTop_toBottomOf="@+id/tvEventType" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
